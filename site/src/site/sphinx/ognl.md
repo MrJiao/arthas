@@ -27,6 +27,14 @@ $ ognl '@java.lang.System@out.println("hello")'
 null
 ```
 
+调用静态函数再调用函数
+
+```bash
+$ ognl '@java.lang.Thread@currentThread().getName()'
+@String[as-command-execute-daemon]
+```
+
+
 获取静态类的静态字段：
 
 ```bash
